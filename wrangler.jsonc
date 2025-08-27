@@ -1,0 +1,32 @@
+{
+  "name": "redraftxx",
+  "main": "dist/cloudflare/_worker.js",
+
+  "compatibility_date": "2025-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": "dist/cloudflare",
+    "binding": "ASSETS"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "redraftxx",
+      "database_id": "2a0859ef-aa9d-4b60-ae10-9ad4064dd451",
+      "migrations_dir": "node_modules/@redraft/site/src/data/migrations"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "STORAGE",
+      "bucket_name": "redraftxx"
+    }
+  ],
+
+  "images": {
+    "binding": "IMAGES"
+  }
+}
